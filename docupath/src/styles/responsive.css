@@ -1,0 +1,140 @@
+/* ═══ RESPONSIVE ═══ */
+@media (max-width: 820px) {
+  .how-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .how-step:not(:last-child)::after {
+    display: none;
+  }
+
+  .situations-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .result-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .input-row {
+    grid-template-columns: 1fr;
+  }
+
+  .compare-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-links,
+  .nav-right {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .situations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .how-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .compare-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .compare-col:not(.highlight-col) {
+    display: none;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .q-card {
+    padding: 28px 22px;
+  }
+
+  .step-indicators {
+    display: none;
+  }
+
+  .lang-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .deadline-card {
+    flex-direction: column;
+  }
+
+  .dl-card-right {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .chatbot-window {
+    width: calc(100vw - 32px);
+    right: 16px;
+    bottom: 90px;
+    height: 70vh;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
+/* ═══ PRINT ═══ */
+@media print {
+  nav,
+  footer,
+  .result-actions,
+  .result-sidebar,
+  .toast,
+  .modal-overlay,
+  .chatbot-toggle,
+  .chatbot-window,
+  .jurisdiction-bar {
+    display: none !important;
+  }
+
+  .result-main {
+    box-shadow: none;
+    border: none;
+    padding: 20px;
+  }
+
+  .doc-preview {
+    max-height: none;
+    border: 1px solid #ddd;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+}

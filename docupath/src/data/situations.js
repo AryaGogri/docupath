@@ -1,0 +1,51 @@
+export const situations = [
+  {
+    key: 'tenant',
+    icon: '🏠',
+    label: 'Tenant Issues',
+    desc: 'Repair requests, deposit disputes, eviction notices — know your rights, file correctly.',
+    bg: '#fff0e6',
+  },
+  {
+    key: 'grant',
+    icon: '🎨',
+    label: 'Artist / Scholarship Grant',
+    desc: 'Application letters, project proposals, budget justifications — formatted and ready.',
+    bg: '#e6f0ff',
+  },
+  {
+    key: 'legal',
+    icon: '⚖️',
+    label: 'Legal Notice',
+    desc: 'Send or respond to a legal notice. Correct language, correct deadlines.',
+    bg: '#fff0f0',
+  },
+  {
+    key: 'visa',
+    icon: '🌍',
+    label: 'Visa / ID Application',
+    desc: 'Cover letters, supporting documents, declaration forms — nothing missed.',
+    bg: '#f0fff5',
+  },
+  {
+    key: 'smallclaims',
+    icon: '📋',
+    label: 'Small Claims Filing',
+    desc: 'Structure your claim, attach the right evidence, meet every deadline.',
+    bg: '#f5f0ff',
+  },
+  {
+    key: 'govt',
+    icon: '🏛️',
+    label: 'Government Application',
+    desc: 'Subsidy, permit, registration — guided through the maze step by step.',
+    bg: '#fffde6',
+  },
+  {
+    key: 'custom',
+    icon: '🤖',
+    label: 'Custom AI Document Builder',
+    desc: 'Type any custom situation prompt (NDAs, Freelance Contracts, Sublet Lease) and generate a document.',
+    bg: '#e0f2fe',
+  },
+];
